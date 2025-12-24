@@ -21,14 +21,14 @@ jobs:
     - name: Create Dummy .env
       run: |
         echo "APP_WEB_PORT=5173" >> .env
-        echo "APP_API_PORT=5000" >> .env
+        echo "APP_API_PORT=5001" >> .env
         echo "APP_DB_PORT=5435" >> .env
         echo "DB_USER=test_user" >> .env
         echo "DB_PASS=test_pass" >> .env
         echo "DB_NAME=test_db" >> .env
         echo "NODE_ENV=production" >> .env
 
-        echo "VITE_API_BASE_URL=http://103.181.142.253:5001" > ./client/.env
+        echo "VITE_API_BASE_URL=http://103.181.142.253:5001" > ./client/.env.production
     
     - name: Build Docker Images
       run: |
