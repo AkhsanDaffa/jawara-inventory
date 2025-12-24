@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1>📦 Gudang Jawara</h1>
+      <h1>📦 Gudang Jawara Testing</h1>
       <table border="1" cellPadding="10" style={{ borderCollapse: 'collapse', width: '100%' }}>
         <thead>
           <tr style={{ background: '#333', color: 'white' }}>

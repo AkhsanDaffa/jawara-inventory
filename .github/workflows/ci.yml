@@ -28,7 +28,7 @@ jobs:
         echo "DB_NAME=test_db" >> .env
         echo "NODE_ENV=production" >> .env
 
-        echo "VITE_API_BASE_URL="http://103.181.142.253:5000" > ./client/.env
+        echo "VITE_API_BASE_URL=http://103.181.142.253:5000" > ./client/.env
     
     - name: Build Docker Images
       run: |
