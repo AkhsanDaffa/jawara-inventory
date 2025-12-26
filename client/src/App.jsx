@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react'
 function App() {
   const [items, setItems] = useState([]);
 
-  // const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-  const API_URL = 'http://103.181.142.253:5001';
-
+  const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
   // Fetch Data
   const fetchItems = () => {
     fetch(`${API_URL}/items`)
