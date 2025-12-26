@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react'
 function App() {
   const [items, setItems] = useState([]);
 
-  const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
+  // const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001';
+
+  const API_URL = 'https://api-gudang.jawaracodecorp.cloud';
   // Fetch Data
   const fetchItems = () => {
     fetch(`${API_URL}/items`)
