@@ -28,7 +28,7 @@ jobs:
         echo "DB_NAME=test_db" >> .env
         echo "NODE_ENV=production" >> .env
 
-        echo "VITE_API_BASE_URL=https://api-gudang.jawaracodecorp.cloud" > ./client/.env.production
+        echo "VITE_API_BASE_URL=https://api-gudang.jawaracodecorp.cloud" > ./client/.env
     
     - name: Build Docker Images
       run: |
